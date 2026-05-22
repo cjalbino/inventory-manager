@@ -123,3 +123,8 @@ STATIC_URL = 'static/'
 import os
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+ALLOWED_HOSTS = ['*']
+
+# ADD THIS LINE BELOW
+CSRF_TRUSTED_ORIGINS = ['https://inventory-cjalbino.up.railway.app']
